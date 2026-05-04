@@ -34,7 +34,7 @@ collection:
         meta:
           id: req_be0c06803ad1462ea125549ef73689a0
           created: 1777936783966
-          modified: 1777936788137
+          modified: 1777937255352
           isPrivate: false
           description: ""
           sortKey: -1777936786153
@@ -63,5 +63,8 @@ environments:
   meta:
     id: env_cdcd5090afc07d1a38029530e7803db3bce8c378
     created: 1777936682414
-    modified: 1777936682414
+    modified: 1777937147790
     isPrivate: false
+  data:
+    "":
+      base_url: http://localhost:5001
