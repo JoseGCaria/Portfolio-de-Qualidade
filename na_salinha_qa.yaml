@@ -1,0 +1,67 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: NaSalinha
+meta:
+  id: wrk_e93d1ee52260412fbbd2a4e492d45af1
+  created: 1777936682401
+  modified: 1777936682401
+  description: ""
+collection:
+  - name: Módulo de Pontuação e Ranking
+    meta:
+      id: fld_09f93f304581412084b897f9e330203f
+      created: 1777936709007
+      modified: 1777936709007
+      sortKey: -1777936709007
+      description: ""
+  - name: " Módulo de Check-in (Mídia)"
+    meta:
+      id: fld_bb6b327d06dd4915b3e6e78417f7a0ba
+      created: 1777936726757
+      modified: 1777936726757
+      sortKey: -1777936726757
+      description: ""
+  - name: " Módulo de Autenticação e Acesso (JWT)"
+    meta:
+      id: fld_07795faae0cb4541b06af1a24abf8572
+      created: 1777936750145
+      modified: 1777936750145
+      sortKey: -1777936750145
+      description: ""
+    children:
+      - url: ""
+        name: New Request
+        meta:
+          id: req_be0c06803ad1462ea125549ef73689a0
+          created: 1777936783966
+          modified: 1777936788137
+          isPrivate: false
+          description: ""
+          sortKey: -1777936786153
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_cdcd5090afc07d1a38029530e7803db3bce8c378
+    created: 1777936682422
+    modified: 1777936682422
+environments:
+  name: Base Environment
+  meta:
+    id: env_cdcd5090afc07d1a38029530e7803db3bce8c378
+    created: 1777936682414
+    modified: 1777936682414
+    isPrivate: false
