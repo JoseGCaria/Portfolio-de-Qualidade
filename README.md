@@ -1,12 +1,12 @@
-🛡️ Portfólio de Qualidade: Projeto NaSalinha
+# 🛡️ Portfólio de Qualidade: Projeto NaSalinha
   
 Este repositório concentra a auditoria completa de qualidade e os artefatos de teste desenvolvidos para o projeto NaSalinha. Como analista de QA, meu objetivo aqui foi atuar como o guardião da experiência do usuário, garantindo a estabilidade do sistema e a integridade dos processos de reserva e gestão.
 
-📝 Descrição do Projeto
+## 📝 Descrição do Projeto
 
 O NaSalinha é uma aplicação voltada para a gestão e reserva de espaços. O foco deste portfólio é a identificação de falhas (bugs), validação de requisitos e a garantia de que a jornada do usuário seja fluida e livre de erros críticos, tanto no frontend quanto nas comunicações de backend.
 
-🛠️ Ferramentas e Tecnologias
+## 🛠️ Ferramentas e Tecnologias
 
 Para este desafio, foram selecionadas ferramentas que permitem cobrir diferentes camadas da aplicação:
 Teste de API: Insomnia (validar endpoints e regras de negócio).
@@ -20,7 +20,7 @@ Gestão de Mídias: Cloudinary (validar upload, armazenamento e performance de i
 Controle de Versão: Git (organizar documentação e versionar scripts de automação).
 
 
-🔍 Estratégia de Testes
+## 🔍 Estratégia de Testes
 
 A auditoria foi dividida nos seguintes tipos de testes para garantir uma cobertura 360º:
 
@@ -54,7 +54,7 @@ Executados após a correção de bugs encontrados para garantir que as novas alt
 Análise da interface para identificar inconsistências visuais, problemas de responsividade e elementos que dificultam a experiência do usuário (UX).
 
 
-🐞 Documentação de Bugs
+## 🐞 Documentação de Bugs
 
 Todos os bugs encontrados foram documentados seguindo o padrão:
 
