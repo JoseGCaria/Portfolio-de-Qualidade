@@ -27,6 +27,7 @@ A auditoria foi dividida nos seguintes tipos de testes para garantir uma cobertu
 1. Testes de Fumaça (Smoke Tests)
 Validação rápida das funcionalidades críticas para garantir que o sistema está estável o suficiente para testes mais profundos (ex: o sistema abre? O login básico funciona?).
 
+
 2. Testes de API / Integração
 Verificação da comunicação entre os serviços.
 
@@ -47,8 +48,10 @@ Cadastro e edição de perfil.
 
 Filtros de busca.
 
+
 4. Testes de Regressão
 Executados após a correção de bugs encontrados para garantir que as novas alterações não quebraram funcionalidades que já estavam operando corretamente.
+
 
 5. Testes de Usabilidade e UI
 Análise da interface para identificar inconsistências visuais, problemas de responsividade e elementos que dificultam a experiência do usuário (UX).
