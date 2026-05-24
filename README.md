@@ -1,39 +1,64 @@
-# Relatório Final de Qualidade - Projeto NaSalinha
+# MyPokemon - Pokedex App
 
-## 1. Descrição do Projeto
-Este projeto tem como objetivo a validação de um sistema de gestão de check-ins e autenticação (JWT). O foco da documentação é garantir a conformidade com as regras de negócio e a segurança do fluxo de usuários.
+Este projeto é uma aplicação de gerenciamento de Pokémons, permitindo que usuários criem contas, gerenciem suas coleções e recuperem senhas via e-mail.
 
-## 2. Ferramentas Utilizadas
-* **Gerenciamento de API:** Insomnia (testes funcionais e de endpoint).
-* **Ambiente:** Docker (containers para backend e banco de dados).
-* **Documentação:** Markdown (.md).
-* **Controle de Qualidade:** Metodologia de testes manuais baseada em requisitos (RF/RNF).
+## 🛠 Ferramentas Utilizadas
 
-## 3. Relatório de Testes Final
+* **Frontend:** React.js com Vite, React Router DOM, CSS modularizado.
+* **Backend:** Node.js com Express e CORS.
+* **Infraestrutura:** Docker e Docker Compose.
+* **Serviço de E-mail:** Nodemailer integrado ao Mailtrap.
+* **Gerenciamento de Estado:** Context API (`AuthContext`).
 
-### 3.1. Métricas de Execução por Área
-Esta tabela resume a execução dos casos de teste dividida por módulos do projeto.
+## 🚀 Setup e Execução
 
-| Módulo (Pasta) | Casos Planejados | Pass (Sucesso) | Fail (Falha) | Status Geral |
-| :--- | :---: | :---: | :---: | :--- |
-| **Módulo(JWT)** | 15 | 13 | 2 |leve|
-| **Check-in** | 9 | 2 | 5 | Grave |
-| **Módulo_de_Pontuação_Ranking** | 9 | 6 | 3 |leve|
-| **Seasons** | 17 | 16 | 1 | leve |
-| **Caso_teste(AD_HOC)** | 3 | 0 | 3 | Bugs extras |
-| **TOTAL** | **53** | **39** | **14** | **73,58% Aprovado** |
+### Pré-requisitos
+* Docker e Docker Compose instalados.
+* Node.js instalado (para desenvolvimento local).
 
-> *Nota: Os casos de teste com status "Fail" estão detalhados como Issues no repositório.*
+### Executando com Docker (Recomendado)
+Para subir a aplicação completa (Frontend + Backend), utilize o Docker Compose na raiz do projeto:
 
-## 4. Resumo dos Testes Realizados
-* **Módulo de Autenticação:** Validação de fluxo de registro, login e controle de acesso JWT.
-* **Módulo de Check-in:** Testes de upload, restrição de duplicidade, fluxo de moderação e permissões de edição.
-* **Infraestrutura:** Validação da gestão de ciclo de vida de arquivos (limpeza em diretórios).
+```bash
+docker-compose up --build
+```
 
-## 5. Estratégia de Regressão
-Para garantir que futuras correções não impactem o sistema, adotamos um plano de **Smoke Test**:
-* **Fluxo Prioritário:** Cadastro e Autenticação.
-* **Ação:** Sempre que uma correção for aplicada, o fluxo de login e criação de check-in deve ser executado para confirmar a integridade.
+* **Frontend:** Disponível em `http://localhost:3000` (ou a porta mapeada).
+* **Backend:** Disponível em `http://localhost:3001`.
 
----
-*Documentação de QA gerada em: 24/05/2026*
+## 📧 Utilizando o Mailtrap
+
+O projeto utiliza o Mailtrap para simular o envio de e-mails de recuperação de senha, evitando o envio de e-mails reais durante o desenvolvimento.
+
+1. Crie uma conta gratuita em [Mailtrap.io](https://mailtrap.io).
+2. No seu "Inbox" do Mailtrap, acesse a aba **SMTP Settings**.
+3. No arquivo `backend/email.js`, substitua as credenciais (`user` e `pass`) pelos dados fornecidos pelo seu Sandbox do Mailtrap.
+4. Quando o sistema disparar um e-mail de recuperação, ele aparecerá na interface do Mailtrap.
+
+## 🏗 Escolhas Técnicas
+
+### 1. Docker Multi-stage Build
+Para o Frontend, optamos por um multi-stage build:
+* **Estágio 1 (Build):** Utiliza Node.js para instalar dependências e compilar o código (Vite).
+* **Estágio 2 (Entrega):** Utiliza o servidor Nginx (Alpine) para servir apenas os arquivos estáticos compilados (`dist`), resultando em uma imagem extremamente leve e performática.
+
+### 2. Backend Containerizado
+O Backend roda em uma imagem Node Alpine. O uso do `docker-compose` garante que a rede interna do Docker (`bridge`) permita que o Frontend e o Backend se comuniquem com segurança, isolando o ambiente de execução.
+
+### 3. Modularização de CSS
+Para manter a escalabilidade, o CSS foi separado do JSX. Cada componente possui seu próprio arquivo `Styles.css`, garantindo que o estilo seja específico e fácil de manter, seguindo a convenção de nomenclatura com hífens (*kebab-case*).
+
+## 🐳 Estrutura do Docker
+
+* **Frontend (`nginx:stable-alpine`):** Servidor de alta performance para arquivos estáticos.
+* **Backend (`node:20-alpine`):** Ambiente isolado para a API Express.
+* **Docker Compose:** Orquestrador que gerencia a inicialização, rede e volumes dos serviços.
+
+## 📝 Comandos Úteis
+
+| Ação | Comando |
+| :--- | :--- |
+| Subir tudo | `docker-compose up --build` |
+| Parar tudo | `docker-compose down` |
+| Logs do Backend | `docker logs mypokemon-backend-1` |
+| Limpar imagens órfãs | `docker system prune` |
