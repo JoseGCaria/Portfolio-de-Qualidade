@@ -1,6 +1,15 @@
 # MyPokemon - Pokedex App
 
-Este projeto é uma aplicação de gerenciamento de Pokémons, permitindo que usuários criem contas, gerenciem suas coleções e recuperem senhas via e-mail.
+O **MyPokemon** é uma aplicação Full-Stack desenvolvida para funcionar como uma Pokedex pessoal e interativa. O objetivo principal do sistema é oferecer uma plataforma segura e responsiva onde os entusiastas de Pokémon possam registrar e gerenciar suas jornadas como treinadores. 
+
+A aplicação vai além de uma simples listagem, implementando um sistema completo de gestão de usuários e segurança de dados.
+
+**Principais Funcionalidades:**
+
+* **👤 Autenticação e Gestão de Usuários:** Sistema completo de cadastro e login de "Treinadores". Cada usuário possui um ambiente isolado e seguro, garantindo que sua coleção seja privada e acessada apenas mediante autenticação.
+* **🎒 Pokedex Pessoal (CRUD):** Uma interface intuitiva onde os usuários podem gerenciar suas coleções. É possível adicionar novos Pokémons capturados, visualizar detalhes, atualizar informações ou remover registros da sua lista.
+* **🔐 Recuperação de Conta Segura:** Para garantir que os usuários não percam o acesso às suas coleções, o sistema conta com um fluxo de "Esqueci minha senha". A aplicação gera e envia de forma automatizada um e-mail com instruções e tokens de redefinição de senha.
+* **⚡ Arquitetura Moderna e Escalável:** Construído com uma separação clara entre Frontend (React.js) e Backend (Node.js/Express), o projeto é totalmente conteinerizado com Docker, garantindo que rode de maneira uniforme em qualquer ambiente.
 
 ## 🛠 Ferramentas Utilizadas
 
