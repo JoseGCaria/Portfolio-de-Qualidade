@@ -1,4 +1,4 @@
-# Relatório Final de Qualidade - Projeto de Check-ins
+# Relatório Final de Qualidade - Projeto NaSalinha
 
 ## 1. Descrição do Projeto
 Este projeto tem como objetivo a validação de um sistema de gestão de check-ins e autenticação (JWT). O foco da documentação é garantir a conformidade com as regras de negócio e a segurança do fluxo de usuários.
