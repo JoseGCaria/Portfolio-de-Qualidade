@@ -14,6 +14,230 @@ collection:
       modified: 1777936709007
       sortKey: -1777936709007
       description: ""
+    children:
+      - name: Adição_Pontos
+        meta:
+          id: fld_718d8d42bdcb43b2957d5de64911bd12
+          created: 1779637897621
+          modified: 1779637897621
+          sortKey: -1779637897621
+          description: ""
+        children:
+          - url: http://localhost:5001/api/checkins/49675326-cb34-4fca-a7ab-396807223c6a
+            name: Adicionar_pontos
+            meta:
+              id: req_96fd9524de6e42ba9a1667f656e41efa
+              created: 1779638178462
+              modified: 1779642449359
+              isPrivate: false
+              description: ""
+              sortKey: -1779638178462
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "status": "APPROVED",
+                  "points": 15
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2MzgwMzMsImV4cCI6MTc3OTY0MTYzM30.MqBenVnGBElgx7Q4dA_-ozMSBxOIvIk3xB8zvNPPSo8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/045a29c5-427c-4dfa-9d65-062ecea08d54
+            name: Delete_Check-in
+            meta:
+              id: req_4031f17659ed4ed88442ea1e059e2da0
+              created: 1779643286648
+              modified: 1779643504223
+              isPrivate: false
+              description: ""
+              sortKey: -1779643286648
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDM0OTIsImV4cCI6MTc3OTY0NzA5Mn0._MhThs2ECNT6z19RGTtFBzBpdLCuZHfD9_SF6UiFjxA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/49675326-cb34-4fca-a7ab-396807223c6a
+            name: Delete_Check-in_pedente
+            meta:
+              id: req_28ea54b37d1c498a8ce58911ef05e2ad
+              created: 1779647379117
+              modified: 1779647748849
+              isPrivate: false
+              description: ""
+              sortKey: -1779642649341.5
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDc2NTcsImV4cCI6MTc3OTY1MTI1N30.H6nZEm3K6amU99EXm-rCo8s40AMhIgVo2zDU1Ra45UA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/a4aa0444-ba7e-4d9b-ad91-8a9ac8d17eb3
+            name: Delete_Check-in_Reject
+            meta:
+              id: req_798ceaf311e64a85ae13d70f4c441a81
+              created: 1779647449568
+              modified: 1779647838695
+              isPrivate: false
+              description: ""
+              sortKey: -1779642330688.25
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDc2NTcsImV4cCI6MTc3OTY1MTI1N30.H6nZEm3K6amU99EXm-rCo8s40AMhIgVo2zDU1Ra45UA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Chekin_bloqueio
+        meta:
+          id: fld_cc306f178def4623b3072c3c8b3d6995
+          created: 1779648096828
+          modified: 1779648096828
+          sortKey: -1779648096828
+          description: ""
+        children:
+          - url: http://localhost:5001/api/checkins
+            name: Envio_e_foto_Primeira
+            meta:
+              id: req_104526fd49a04a3c97cffe0314f7dabf
+              created: 1779648109282
+              modified: 1779648261769
+              isPrivate: false
+              description: ""
+              sortKey: -1779648100100
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada_id
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: legenda
+                  value: Primeiro Check-in
+                  description: ""
+                  disabled: false
+                  multiline: false
+                  type: text
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: C:\Users\caria\Downloads\foto_classic.jpg
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDgyNTMsImV4cCI6MTc3OTY1MTg1M30.DZajHRacG50qeChBY5HatJ282FSwMtPizEUu3iVb18E
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins
+            name: Envio_e_foto_Segunda<24H
+            meta:
+              id: req_b4ae8ca239d74947bf198b92823f63bb
+              created: 1779648120518
+              modified: 1779648265605
+              isPrivate: false
+              description: ""
+              sortKey: -1779645693374
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada_id
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: legenda
+                  value: Segundo Check-in
+                  description: ""
+                  disabled: false
+                  multiline: false
+                  type: text
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: C:\Users\caria\Downloads\foto_classic.jpg
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDgyNTMsImV4cCI6MTc3OTY1MTg1M30.DZajHRacG50qeChBY5HatJ282FSwMtPizEUu3iVb18E
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
   - name: " Módulo de Check-in (Mídia)"
     meta:
       id: fld_bb6b327d06dd4915b3e6e78417f7a0ba
@@ -21,60 +245,1662 @@ collection:
       modified: 1777936726757
       sortKey: -1777936726757
       description: ""
+    children:
+      - name: Checkin_foto
+        meta:
+          id: fld_6b5f1262ba494d089089d85418c2be98
+          created: 1779615534727
+          modified: 1779648105999
+          sortKey: -1779615534727
+          description: ""
+        children:
+          - url: http://localhost:5001/api/checkins
+            name: Envio_e_foto_repetida
+            meta:
+              id: req_00a2dd02cfc340559bd361ee5151d22f
+              created: 1779618269568
+              modified: 1779639805166
+              isPrivate: false
+              description: ""
+              sortKey: -1779618269568
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada_id
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: legenda
+                  value: Check-in do dia
+                  description: ""
+                  disabled: false
+                  multiline: false
+                  type: text
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: C:\Users\caria\Downloads\foto_classic.jpg
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2MzkxNDEsImV4cCI6MTc3OTY0Mjc0MX0.qvn4CB8OrDhQHVz7BuORs_bdDI_MFmerugaE8NUMN_M
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins
+            name: Envio_foto_Verificar_Status
+            meta:
+              id: req_f7cccc20e1a64a469d3ceb7724743b7a
+              created: 1779628342775
+              modified: 1779635257677
+              isPrivate: false
+              description: ""
+              sortKey: -1779628342775
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada_id
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: legenda
+                  value: Status de Aproved
+                  description: ""
+                  disabled: false
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: C:\Users\caria\Downloads\foto_classic.jpg
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mjg0NzksImV4cCI6MTc3OTYzMjA3OX0.m2DumwXPNmoeHbA3MFFJd2T_0gxxEFEh4HGJf0JtNJM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins
+            name: Verificao_Deletar_Arquivos_Temporarios
+            meta:
+              id: req_661c4676cac34985b577cd5a7a2c524b
+              created: 1779634919958
+              modified: 1779637694625
+              isPrivate: false
+              description: ""
+              sortKey: -1779634919958
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  fileName: C:\Users\caria\Downloads\foto_classic.jpg
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NWE2OWFjZi01OTI3LTQzOGEtYjI3ZS00Y2QyYjY0ZGM2MTgiLCJpYXQiOjE3Nzk2MzU0MjMsImV4cCI6MTc3OTYzOTAyM30.V4dJ7UricdOQhgwiZWXu_FRSytULb9dP8TcY5GFqPVE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins
+            name: Envio_Sem_Foto
+            meta:
+              id: req_c0581650c294439ab231cc1bf973910d
+              created: 1779638803697
+              modified: 1779638898566
+              isPrivate: false
+              description: ""
+              sortKey: -1779638803697
+            method: POST
+            body:
+              mimeType: multipart/form-data
+              params:
+                - name: temporada
+                  value: "1"
+                  description: ""
+                  disabled: false
+                - name: photo
+                  value: ""
+                  description: ""
+                  disabled: false
+                  type: file
+            headers:
+              - name: Content-Type
+                value: multipart/form-data
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mzg4NDYsImV4cCI6MTc3OTY0MjQ0Nn0.AaSg_v3EnKnLy_kz7OxQoDklEAmIu0ddphSXI1_Y_3E
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Checkin_Alteração
+        meta:
+          id: fld_1797f6630f674ca0a05fe72c59145f77
+          created: 1779628984404
+          modified: 1779629443702
+          sortKey: -1779628984404
+          description: ""
+        children:
+          - url: http://localhost:5001/api/checkins/a4aa0444-ba7e-4d9b-ad91-8a9ac8d17eb3
+            name: Alteração_outroUsuario_Status_Admin
+            meta:
+              id: req_7f0bb71aac8944c49bc755b6c99a3de7
+              created: 1779628995341
+              modified: 1779647823453
+              isPrivate: false
+              description: ""
+              sortKey: -1779628999108
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "status": "REJECTED",
+                  "notes": "Check-in aprovado com sucesso",
+                  "points": 15
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDc2NTcsImV4cCI6MTc3OTY1MTI1N30.H6nZEm3K6amU99EXm-rCo8s40AMhIgVo2zDU1Ra45UA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/b5b5407d-4bb9-41a7-9671-43692b7244d4
+            name: Alteração_outroUsuario_Status_Membro
+            meta:
+              id: req_063ce55dda1b41b09cb2a59452897e49
+              created: 1779629446588
+              modified: 1779642153515
+              isPrivate: false
+              description: ""
+              sortKey: -1779629446588
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "status": "APPROVED",
+                  "notes": "Check-in aprovado com sucesso",
+                  "points": 10
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mjg0NzksImV4cCI6MTc3OTYzMjA3OX0.m2DumwXPNmoeHbA3MFFJd2T_0gxxEFEh4HGJf0JtNJM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/b28265c1-c53f-443b-9735-c45039b5c9ea
+            name: Alteração_ProprioCheckin_Membro
+            meta:
+              id: req_c22e99275de9437f85a8f3d2cd0c2f89
+              created: 1779629610083
+              modified: 1779630387102
+              isPrivate: false
+              description: ""
+              sortKey: -1779629610083
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "notes": "Editando minha nota pessoal do check-in"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mjg0NzksImV4cCI6MTc3OTYzMjA3OX0.m2DumwXPNmoeHbA3MFFJd2T_0gxxEFEh4HGJf0JtNJM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/b28265c1-c53f-443b-9735-c45039b5c9ea
+            name: Deletar_PropioCheckin
+            meta:
+              id: req_8ac02a5c228842cc9dd327ed320eaeb6
+              created: 1779640381771
+              modified: 1779640820435
+              isPrivate: false
+              description: ""
+              sortKey: -1779640381771
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDA0MDgsImV4cCI6MTc3OTY0NDAwOH0.MjLV--LTO-K38Xs-xoZ9mStcGsKtl8wny7vmNIZlBz0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/checkins/a4aa0444-ba7e-4d9b-ad91-8a9ac8d17eb3
+            name: Delete_outroUsuario_Membro
+            meta:
+              id: req_838f012201bc40b58b506e7820c67d50
+              created: 1779642012035
+              modified: 1779642128598
+              isPrivate: false
+              description: ""
+              sortKey: -1779642012035
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDIwNjEsImV4cCI6MTc3OTY0NTY2MX0.PNsM4rtmFcliRbvWBEkj_fJPDRSmz-t__v_shgYAtCU
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
   - name: " Módulo de Autenticação e Acesso (JWT)"
     meta:
       id: fld_07795faae0cb4541b06af1a24abf8572
       created: 1777936750145
-      modified: 1777936750145
+      modified: 1779652886629
       sortKey: -1777936750145
       description: ""
     children:
-      - url: ""
-        name: New Request
+      - name: Cadastros
         meta:
-          id: req_be0c06803ad1462ea125549ef73689a0
-          created: 1777936783966
-          modified: 1777937255352
-          isPrivate: false
+          id: fld_e08f8c4817fb4181a0e3b16897c5c19a
+          created: 1779608513933
+          modified: 1779608513933
+          sortKey: -1779608513933
           description: ""
-          sortKey: -1777936786153
-        method: POST
-        headers:
-          - name: User-Agent
-            value: insomnia/12.5.0
-            description: ""
-            disabled: false
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
-      - url: ""
-        name: New Request
+        children:
+          - url: http://localhost:5001/api/auth/register
+            name: Cadastro_Usuario_Admin
+            meta:
+              id: req_90e3b014add0483d895d2fc006d7d7da
+              created: 1778068499204
+              modified: 1779628140626
+              isPrivate: false
+              description: ""
+              sortKey: -1779608520331
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "silva",
+                	"email": "silvaadmin@gmail.com",
+                	"password": "senha3124",
+                	"role": "ADMIN"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.5.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/register
+            name: Cadastro_Duplicado
+            meta:
+              id: req_425fa3f8a28f41558d3aaba9ab111115
+              created: 1779605031859
+              modified: 1779626865690
+              isPrivate: false
+              description: ""
+              sortKey: -1779608520531
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "silva",
+                	"email": "silva25@gmail.com",
+                	"password": "senha123",
+                	"role": "MEMBER"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/register
+            name: Cadastro_senha_hash
+            meta:
+              id: req_f59f47bf6684440a95099eb3f722ebc4
+              created: 1779608396237
+              modified: 1779642928644
+              isPrivate: false
+              description: ""
+              sortKey: -1779608520631
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "caria",
+                	"email": "cariajg38@gmail.com",
+                	"password": "senha123",
+                	"role": "TRAINEE"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/register
+            name: Cadastro_Usuario_Membro
+            meta:
+              id: req_e6b4f792d1a542be85e2f81d5ed04b88
+              created: 1779608462567
+              modified: 1779633408081
+              isPrivate: false
+              description: ""
+              sortKey: -1779608520431
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "caria",
+                	"email": "cariajg50@gmail.com",
+                	"password": "senha123",
+                	"role": "MEMBER"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/register
+            name: Cadastro_incompleto_email
+            meta:
+              id: req_466de0171f4e480eb33436c3b905b707
+              created: 1779613855468
+              modified: 1779615041883
+              isPrivate: false
+              description: ""
+              sortKey: -1779613855468
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "carla",
+                	"email": "cariajg02@ddadd.com",
+                	"password": "312456",
+                	"role": "TRAINEE"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Acessos
         meta:
-          id: req_90e3b014add0483d895d2fc006d7d7da
-          created: 1778068499204
-          modified: 1778068503271
-          isPrivate: false
+          id: fld_1bbe1fc23c6b4ae2983f87ed862e098c
+          created: 1779608534093
+          modified: 1779608534093
+          sortKey: -1779608534093
           description: ""
-          sortKey: -1777936786253
-        method: POST
-        headers:
-          - name: User-Agent
-            value: insomnia/12.5.0
-            description: ""
-            disabled: false
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
+        children:
+          - url: http://localhost:5001/api/seasons
+            name: Acesso_Admin_Seasons
+            meta:
+              id: req_0f30a48565f44d39b10fc381899f50fe
+              created: 1779607134884
+              modified: 1779628326204
+              isPrivate: false
+              description: ""
+              sortKey: -1779615066462
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"name": "Temporada 2025.1",
+                		"startDate": "2025-01-01T00:00:00.000Z",
+                		"endDate": "2025-06-30T00:00:00.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmZjU4YjlmNy00ZTRlLTQwZmEtODFjMC1mYTFhZjI5OGYyMTMiLCJpYXQiOjE3Nzk2MjgxMzIsImV4cCI6MTc3OTYzMTczMn0.RHmPqxxwBZW-JxzGzB2XxEiuDvIB4Pf-pSZgnzTVMwc
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Acesso_Membro_Seasons
+            meta:
+              id: req_3f4621a4174d453bb5e7b472c5ad7068
+              created: 1779608427784
+              modified: 1779628320772
+              isPrivate: false
+              description: ""
+              sortKey: -1779615066562
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"name": "Temporada 2025.1",
+                		"startDate": "2025-01-01T00:00:00.000Z",
+                		"endDate": "2025-06-30T00:00:00.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2MjgyNTksImV4cCI6MTc3OTYzMTg1OX0.ZfKIJh36S9yMKmKS8DxdtJUDDmWF-vOPev6SW54lZew
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Login
+        meta:
+          id: fld_befa3f8483944db1be74ce77d2ad5db6
+          created: 1779608563106
+          modified: 1779608577823
+          sortKey: -1779608563106
+          description: ""
+        children:
+          - url: http://localhost:5001/api/auth/login
+            name: Login_Membro
+            meta:
+              id: req_be0c06803ad1462ea125549ef73689a0
+              created: 1777936783966
+              modified: 1779656594208
+              isPrivate: false
+              description: ""
+              sortKey: -1779636516043
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "caria",
+                	"email": "cariajg10@gmail.com",
+                	"password": "senha123"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.5.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/login
+            name: Login_Admin
+            meta:
+              id: req_9a7356bcdc6d44fda876e244ea16c455
+              created: 1779615094604
+              modified: 1779656590917
+              isPrivate: false
+              description: ""
+              sortKey: -1779636516093
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "Admin",
+                	"email": "admin@nasalinha.com",
+                	"password": "senha123"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/login
+            name: Login_Trainee
+            meta:
+              id: req_2c4d7c1acd5049a3ac5bef1837d32c2a
+              created: 1779615225785
+              modified: 1779656595993
+              isPrivate: false
+              description: ""
+              sortKey: -1779636516018
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "caria",
+                	"email": "cariajg38@gmail.com",
+                	"password": "senha123"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/login
+            name: LoginHash_senha_errada
+            meta:
+              id: req_867ee2911dfa4e6bb3b01c0653fd2c0f
+              created: 1779636515993
+              modified: 1779636681208
+              isPrivate: false
+              description: ""
+              sortKey: -1779636515993
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "caria",
+                	"email": "cariajg48@gmail.com",
+                	"password": "senha3124"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/login
+            name: Login_Email_Incompleto
+            meta:
+              id: req_4508d7faa14d40d8a32fe0458afec6c2
+              created: 1779656659618
+              modified: 1779656675981
+              isPrivate: false
+              description: ""
+              sortKey: -1779635717975.5
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "carla",
+                	"email": "cariajg02@ddadd.com",
+                	"password": "312456"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Esqueceu a senha
+        meta:
+          id: fld_7eafc54209dc434c962d4be221af41ca
+          created: 1779615374942
+          modified: 1779615374942
+          sortKey: -1779615374942
+          description: ""
+        children:
+          - url: http://localhost:5001/api/auth/forgot-password
+            name: Envio_de_Redefinicao_Senha
+            meta:
+              id: req_4b27147939624e3cb44e1e30af76c91c
+              created: 1779648780611
+              modified: 1779649752156
+              isPrivate: false
+              description: ""
+              sortKey: -1779648780611
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"email": "cariajg10@gmail.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDkwNTksImV4cCI6MTc3OTY1MjY1OX0.3RTYSo9U3NoASP0JiLJFjYEShcjZD5lvzWSI1pKdZ3E
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/auth/reset-password
+            name: Redefinir_Senha
+            meta:
+              id: req_093a883870674e6e8a066d8ae7b9ece8
+              created: 1779649123711
+              modified: 1779649777713
+              isPrivate: false
+              description: ""
+              sortKey: -1779649123711
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {
+                	"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJwdXJwb3NlIjoicmVzZXQiLCJpYXQiOjE3Nzk2NDk0MzcsImV4cCI6MTc3OTY1MzAzN30.z-zl5Qwef_cyavqN9AtxNf7CnqFH1b1IZwFM91p-4eY",
+                	
+                	"newPassword": "senha321",
+                	"passwordConfirmation": "senha321"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDkzNTIsImV4cCI6MTc3OTY1Mjk1Mn0.6PNCVbpgN5m7wjWtbd9OUbY0hcugxQbOH-FpDx_wvuo
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: Vizualização
+    meta:
+      id: fld_2d1fafabd0774cef996b0ce7fff6a35e
+      created: 1779638749727
+      modified: 1779638749727
+      sortKey: -1779638749727
+      description: ""
+    children:
+      - name: Rankings
+        meta:
+          id: fld_1193bbfe386c43d993483be31efddd81
+          created: 1779652915516
+          modified: 1779652915516
+          sortKey: -1779652915516
+          description: ""
+        children:
+          - url: http://localhost:5001/api/rankings
+            name: Atualização_ranking_Admin
+            meta:
+              id: req_2f5abee6850040e0a9ecfbbcfaa317cb
+              created: 1779642261994
+              modified: 1779652925453
+              isPrivate: false
+              description: ""
+              sortKey: -1779652923409
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDI1NzMsImV4cCI6MTc3OTY0NjE3M30.xiXrePbtFOgP4Xaav8ZlLKQQ4AggCjSBIHjD841f1yI
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/rankings
+            name: Atualização_ranking_membro
+            meta:
+              id: req_39acf973e75b4318a1bb9c7020f73d88
+              created: 1779642610920
+              modified: 1779652923339
+              isPrivate: false
+              description: ""
+              sortKey: -1779652923309
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NDI2MzYsImV4cCI6MTc3OTY0NjIzNn0.VbHQdspBm0-7kR7JX7NWLRp0lujmmGcf3XJg3HORj_8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/rankings
+            name: Atualização_ranking_Trainee
+            meta:
+              id: req_66019d6ea958439199e5a8636f652cbd
+              created: 1779642673433
+              modified: 1779652927184
+              isPrivate: false
+              description: ""
+              sortKey: -1779652923509
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NDI5MzQsImV4cCI6MTc3OTY0NjUzNH0.IeQjZ2T2himjUvpa8YTT3vb5_MlugjPfSBOgxp5miOY
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Cadastro
+        meta:
+          id: fld_358435cf4c874a6f9e22574cd3ebe4c9
+          created: 1779652940196
+          modified: 1779652950468
+          sortKey: -1779652940221
+          description: ""
+        children:
+          - url: http://localhost:5001/api/users
+            name: Visualizar_Usuarios_Cadastro_Membro
+            meta:
+              id: req_0365149fcd154b3ea5e11d540dda63c3
+              created: 1779637700017
+              modified: 1779652954418
+              isPrivate: false
+              description: ""
+              sortKey: -1779652953046
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mzg0MDQsImV4cCI6MTc3OTY0MjAwNH0.9fiBBQW5dUyaUkcViOMaWEuKG3se5G3_AL3dFE0KFoI
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/users/me
+            name: Visualizar_Proprio_Cadastro_Membro
+            meta:
+              id: req_9c9b261521c24478888f59c6b80119d5
+              created: 1779638459460
+              modified: 1779652952983
+              isPrivate: false
+              description: ""
+              sortKey: -1779652952946
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2Mzg0MDQsImV4cCI6MTc3OTY0MjAwNH0.9fiBBQW5dUyaUkcViOMaWEuKG3se5G3_AL3dFE0KFoI
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/users
+            name: Visualizar_Usuarios_Cadastrados_Admin
+            meta:
+              id: req_ae517954905043ee8a6a349125bca28b
+              created: 1779638637671
+              modified: 1779652956498
+              isPrivate: false
+              description: ""
+              sortKey: -1779652953146
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2Mzg2NTIsImV4cCI6MTc3OTY0MjI1Mn0.lAdsUxWrxwkGvzPuZkzI4nICvB3AVrPM4pXWtMl5gnM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Check-in
+        meta:
+          id: fld_356ad84e4c6a43cab5802a7ce63641bc
+          created: 1779652971187
+          modified: 1779652971187
+          sortKey: -1779652971187
+          description: ""
+        children:
+          - url: http://localhost:5001/api/checkins
+            name: Visualizar_id_doCheck-in
+            meta:
+              id: req_810ff85667bf47a1a04659a8c3758ee6
+              created: 1779629054035
+              modified: 1779652976950
+              isPrivate: false
+              description: ""
+              sortKey: -1779652976920
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NDc2NTcsImV4cCI6MTc3OTY1MTI1N30.H6nZEm3K6amU99EXm-rCo8s40AMhIgVo2zDU1Ra45UA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Seas
+        meta:
+          id: fld_4a57e1a6667545268732765fe06cecca
+          created: 1779652986128
+          modified: 1779653010754
+          sortKey: -1779652986128
+          description: ""
+        children:
+          - url: http://localhost:5001/api/seasons
+            name: Visualizar_seas_Membro
+            meta:
+              id: req_f1d09a86eb43434aac5f8c250309b467
+              created: 1779652687940
+              modified: 1779653425228
+              isPrivate: false
+              description: ""
+              sortKey: -1779653027890
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NTM0MDksImV4cCI6MTc3OTY1NzAwOX0.4wVNnEfup2gB5Qq-KgWcvG-wDz_hAEWay_jup2HQhzo
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Visualizar_seas_Trainee
+            meta:
+              id: req_dff086e02b71471d86fb953bdf63d669
+              created: 1779652876887
+              modified: 1779653630107
+              isPrivate: false
+              description: ""
+              sortKey: -1779653027840
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NTM2MTgsImV4cCI6MTc3OTY1NzIxOH0.XWrsAOtsG1O0eFpdWiR7IQjCnzD3huuljjh0aZLQEtY
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Visualizar_seas_Admin
+            meta:
+              id: req_8e59090526c846e68602660328d0936b
+              created: 1779653020167
+              modified: 1779654979416
+              isPrivate: false
+              description: ""
+              sortKey: -1779653027940
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTQ5NjAsImV4cCI6MTc3OTY1ODU2MH0.bai0CpIVT2n180ryLdLVRr85npD-CIfRLLLDwD4-ArM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b
+            name: Visualizar_seasUnica_Admin
+            meta:
+              id: req_6a420ee4edeb4550858e3bbe0b4c860e
+              created: 1779654428904
+              modified: 1779654445047
+              isPrivate: false
+              description: ""
+              sortKey: -1779653027915
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTQzOTMsImV4cCI6MTc3OTY1Nzk5M30.F0DEp8VkCJOQGMXS8K4YGOFCTTVE37hS7PvVn6bUcD8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+  - name: Seasons
+    meta:
+      id: fld_810d25ebc2ae4bfabb9015d8be55877c
+      created: 1779652684741
+      modified: 1779652684741
+      sortKey: -1779652684741
+      description: ""
+    children:
+      - name: Delete
+        meta:
+          id: fld_2b928da26fea447a96c365bc2aa73fe7
+          created: 1779655546378
+          modified: 1779655546378
+          sortKey: -1779655546378
+          description: ""
+        children:
+          - url: http://localhost:5001/api/seasons/2b84c027-4e88-420a-b992-826e23aa3e25
+            name: Delete_Temporada_Admin
+            meta:
+              id: req_13439016af5d42a0a9df0aab9170f167
+              created: 1779655149278
+              modified: 1779655549240
+              isPrivate: false
+              description: ""
+              sortKey: -1779655549197
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTU0NjcsImV4cCI6MTc3OTY1OTA2N30.ZuUd542lan_cmm59vzqN1ybTLXMYR6gZZhb_EOCv2-8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/2b84c027-4e88-420a-b992-826e23aa3e25
+            name: Delete_Temporada_Admin_Membro
+            meta:
+              id: req_3402e59d2fb24411ae89e388d842a857
+              created: 1779655314870
+              modified: 1779655551027
+              isPrivate: false
+              description: ""
+              sortKey: -1779655549297
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NTUzNzksImV4cCI6MTc3OTY1ODk3OX0.NH7aafKxLbgc6cu1hIPEqYjcMX0wfrKpB111t_XucdM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/2b84c027-4e88-420a-b992-826e23aa3e25
+            name: Delete_Temporada_Admin_Trainee
+            meta:
+              id: req_90f38ba696c049bfb57d5ab706e21578
+              created: 1779655324164
+              modified: 1779655552157
+              isPrivate: false
+              description: ""
+              sortKey: -1779655549247
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NTUzNTAsImV4cCI6MTc3OTY1ODk1MH0.NanKldfY7IlNve1AXQoY3YcmIye_DsMwKwId_so8V3Y
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Alteração
+        meta:
+          id: fld_309cd51fa1f14cea84781bf6769f3ad6
+          created: 1779655561882
+          modified: 1779655561882
+          sortKey: -1779655561882
+          description: ""
+        children:
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b
+            name: Alteração_Temporada_Admin
+            meta:
+              id: req_f4d9287900904f449dec76ae1ab43705
+              created: 1779654241871
+              modified: 1779655579292
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566933
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                  "endDate": "2027-03-01T23:59:59.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTQ2NDEsImV4cCI6MTc3OTY1ODI0MX0.BqLOqE6FevA7qGBHATVYM3rw2ePgGopQMp6zamkVgRs
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b
+            name: Alteração_Temporada_Membro
+            meta:
+              id: req_164a3ec7554f48cabde6a7bb82142bfe
+              created: 1779654278588
+              modified: 1779655573367
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566833
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                  "endDate": "2027-03-01T23:59:59.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NTQ2OTUsImV4cCI6MTc3OTY1ODI5NX0.2cDzDG9gdwusv6a1khArI3m0KSZgpviDFT_zRRIR4yM
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b
+            name: Alteração_Temporada_Trainee
+            meta:
+              id: req_17d25782d4fb4c1a9e7ab1ea2e26c30b
+              created: 1779654286759
+              modified: 1779655574983
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566783
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                  "endDate": "2027-03-01T23:59:59.000Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NTQ3NjUsImV4cCI6MTc3OTY1ODM2NX0.AKlpMTaswN36KqZzni7MN5kULcbTfteo2DK90kVb_kA
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b/toggle-active
+            name: Alteração_TemporadaActive_Admin
+            meta:
+              id: req_0b682a1181f24d11abbd0dc0993c655b
+              created: 1779656313074
+              modified: 1779656500745
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566883
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                	"IsActive": "true"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTYzNDMsImV4cCI6MTc3OTY1OTk0M30.AOA22pcu4s3mi4vcGBs8XlQGpotiINbXGFVJa0rS_l8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b/toggle-active
+            name: Alteração_TemporadaActive_Membro
+            meta:
+              id: req_31f35c2dc9ab43d896aed754ebb61956
+              created: 1779656506917
+              modified: 1779656554246
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566808
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                	"IsActive": "true"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NTY1NDUsImV4cCI6MTc3OTY2MDE0NX0.gEBGUzi6Xz7_78Yp8KxX_Cw_C0UvyMztMKMHzsum_og
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons/044e75b2-a24a-4fe9-b94d-468c8f03373b/toggle-active
+            name: Alteração_TemporadaActive_Trainee
+            meta:
+              id: req_e1594cf5ede44c938c61ecb5fdceb241
+              created: 1779656522199
+              modified: 1779656568406
+              isPrivate: false
+              description: ""
+              sortKey: -1779655566683
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026 - Atualizada",
+                	"IsActive": "true"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NTY1NjAsImV4cCI6MTc3OTY2MDE2MH0.mWWaxe2exh5WDPZgoWZovLkVL4BYM7dIh1R2xCjwC7c
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Criar
+        meta:
+          id: fld_0fa17662d7624949bcbdfa2dc5b43095
+          created: 1779655590327
+          modified: 1779655590327
+          sortKey: -1779655590327
+          description: ""
+        children:
+          - url: http://localhost:5001/api/seasons
+            name: Criar_Temporada_Admin
+            meta:
+              id: req_f672664788934947b6f13b8e72ddb46f
+              created: 1779653943381
+              modified: 1779655605613
+              isPrivate: false
+              description: ""
+              sortKey: -1779655594859
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026",
+                  "startDate": "2026-12-01T00:00:00Z",
+                  "endDate": "2027-03-01T23:59:59Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTQzOTMsImV4cCI6MTc3OTY1Nzk5M30.F0DEp8VkCJOQGMXS8K4YGOFCTTVE37hS7PvVn6bUcD8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Criar_Temporada_Trainee
+            meta:
+              id: req_8b386990d227426a90e2c48b741eb4a6
+              created: 1779653966103
+              modified: 1779655599052
+              isPrivate: false
+              description: ""
+              sortKey: -1779655594659
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026",
+                  "startDate": "2026-12-01T00:00:00Z",
+                  "endDate": "2027-03-01T23:59:59Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwZjk3M2Q5OC1mNGYzLTQzOGUtOGY1ZC1kM2E3MWRmMmFlZjUiLCJpYXQiOjE3Nzk2NTQyMjAsImV4cCI6MTc3OTY1NzgyMH0.oW5gmnI3rXh1XanswQE-G2RKgKum3RSJC-kQ_ljqD_g
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Criar_Temporada_Membro
+            meta:
+              id: req_305c8470cd21435ea26730258ce837eb
+              created: 1779653968755
+              modified: 1779655600377
+              isPrivate: false
+              description: ""
+              sortKey: -1779655594609
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026",
+                  "startDate": "2026-12-01T00:00:00Z",
+                  "endDate": "2027-03-01T23:59:59Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NjJkZWQ1Ny04ZDRlLTRjNjktOWI0My04YTZmMTcxZDVhOTciLCJpYXQiOjE3Nzk2NTQyMDMsImV4cCI6MTc3OTY1NzgwM30.NjRF0ec6D_lWfLMttXh337Aq7VphrHxxYuCJeeY9-Go
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5001/api/seasons
+            name: Criar_TemporadaRepetida_Admin
+            meta:
+              id: req_ef842a98202141a4955966c8fc564d43
+              created: 1779654808457
+              modified: 1779655602843
+              isPrivate: false
+              description: ""
+              sortKey: -1779655594759
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "name": "Temporada de Verão 2026",
+                  "startDate": "2026-12-01T00:00:00Z",
+                  "endDate": "2027-03-01T23:59:59Z"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.6.0
+                description: ""
+                disabled: false
+            authentication:
+              type: bearer
+              token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhZmE5OGVhNC0zZTVhLTQ4YWItYWZmNC0xYTMzMGU0OGFlYTQiLCJpYXQiOjE3Nzk2NTQzOTMsImV4cCI6MTc3OTY1Nzk5M30.F0DEp8VkCJOQGMXS8K4YGOFCTTVE37hS7PvVn6bUcD8
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
