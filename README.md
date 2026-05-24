@@ -16,12 +16,12 @@ Esta tabela resume a execução dos casos de teste dividida por módulos do proj
 
 | Módulo (Pasta) | Casos Planejados | Pass (Sucesso) | Fail (Falha) | Status Geral |
 | :--- | :---: | :---: | :---: | :--- |
-| **Módulo(JWT)** | 4 | 2 | 2 | ⚠️ Atenção |
-| **Check-in** | 5 | 2 | 3 | ⚠️ Atenção |
-| **Módulo_de_Pontuação_Ranking** | 2 | 2 | 0 | ✅ Estável |
-| **Seasons** | 2 | 2 | 0 | ✅ Estável |
-| **Caso_teste(AD_HOC)** | 1 | 1 | 0 | ✅ Estável |
-| **TOTAL** | **14** | **9** | **5** | **64% Aprovado** |
+| **Módulo(JWT)** | 15 | 13 | 2 |leve|
+| **Check-in** | 9 | 2 | 5 | Grave |
+| **Módulo_de_Pontuação_Ranking** | 9 | 6 | 3 |leve|
+| **Seasons** | 17 | 16 | 1 | leve |
+| **Caso_teste(AD_HOC)** | 3 | 0 | 3 | Bugs extras |
+| **TOTAL** | **53** | **39** | **14** | **73,58% Aprovado** |
 
 > *Nota: Os casos de teste com status "Fail" estão detalhados como Issues no repositório.*
 
