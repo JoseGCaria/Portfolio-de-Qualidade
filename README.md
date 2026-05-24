@@ -1,52 +1,39 @@
-#  Portfólio de Qualidade: Projeto NaSalinha
-  
-Este repositório concentra a auditoria completa de qualidade e os artefatos de teste desenvolvidos para o projeto NaSalinha. Como analista de QA, meu objetivo aqui foi atuar como o guardião da experiência do usuário, garantindo a estabilidade do sistema e a integridade dos processos de reserva e gestão.
- 
-##  Descrição do Projeto
+# Relatório Final de Qualidade - Projeto de Check-ins
 
-O NaSalinha é uma aplicação voltada para a gestão e reserva de espaços. O foco deste portfólio é a identificação de falhas (bugs), validação de requisitos e a garantia de que a jornada do usuário seja fluida e livre de erros críticos, tanto no frontend quanto nas comunicações de backend.
+## 1. Descrição do Projeto
+Este projeto tem como objetivo a validação de um sistema de gestão de check-ins e autenticação (JWT). O foco da documentação é garantir a conformidade com as regras de negócio e a segurança do fluxo de usuários.
 
-##  Ferramentas e Tecnologias
+## 2. Ferramentas Utilizadas
+* **Gerenciamento de API:** Insomnia (testes funcionais e de endpoint).
+* **Ambiente:** Docker (containers para backend e banco de dados).
+* **Documentação:** Markdown (.md).
+* **Controle de Qualidade:** Metodologia de testes manuais baseada em requisitos (RF/RNF).
 
-Para este desafio, foram selecionadas ferramentas que permitem cobrir diferentes camadas da aplicação:
-Teste de API: Insomnia (validar endpoints e regras de negócio).
+## 3. Relatório de Testes Final
 
-Ambiente e Infraestrutura: Docker (isolar o ambiente e garantir paridade com a produção).
+### 3.1. Métricas de Execução por Área
+Esta tabela resume a execução dos casos de teste dividida por módulos do projeto.
 
-Teste de E-mail: Mailtrap (validar fluxos de SMTP e notificações sem disparos reais).
+| Módulo (Pasta) | Casos Planejados | Pass (Sucesso) | Fail (Falha) | Status Geral |
+| :--- | :---: | :---: | :---: | :--- |
+| **Módulo(JWT)** | 4 | 2 | 2 | ⚠️ Atenção |
+| **Check-in** | 5 | 2 | 3 | ⚠️ Atenção |
+| **Módulo_de_Pontuação_Ranking** | 2 | 2 | 0 | ✅ Estável |
+| **Seasons** | 2 | 2 | 0 | ✅ Estável |
+| **Caso_teste(AD_HOC)** | 1 | 1 | 0 | ✅ Estável |
+| **TOTAL** | **14** | **9** | **5** | **64% Aprovado** |
 
-Gestão de Mídias: Cloudinary (validar upload, armazenamento e performance de imagens).
+> *Nota: Os casos de teste com status "Fail" estão detalhados como Issues no repositório.*
 
-Controle de Versão: Git (organizar documentação e versionar scripts de automação).
+## 4. Resumo dos Testes Realizados
+* **Módulo de Autenticação:** Validação de fluxo de registro, login e controle de acesso JWT.
+* **Módulo de Check-in:** Testes de upload, restrição de duplicidade, fluxo de moderação e permissões de edição.
+* **Infraestrutura:** Validação da gestão de ciclo de vida de arquivos (limpeza em diretórios).
 
+## 5. Estratégia de Regressão
+Para garantir que futuras correções não impactem o sistema, adotamos um plano de **Smoke Test**:
+* **Fluxo Prioritário:** Cadastro e Autenticação.
+* **Ação:** Sempre que uma correção for aplicada, o fluxo de login e criação de check-in deve ser executado para confirmar a integridade.
 
-##  Estratégia de Testes
-
-Utilizei uma abordagem de pirâmide de testes adaptada para garantir uma cobertura de qualidade em todas as frentes da aplicação NaSalinha:
-
-Nível de Teste  |  Foco Principal  |  Ferramenta Chave  |  Impacto no Projeto
-
- Smoke Tests  |  Estabilidade básica da aplicação  |  Manual / Navegador  |  "Garante que o sistema está ""vivo"""
- 
- API & Integração  |  Comunicação e Regras de Negócio  |  Insomnia  |  Evita quebras silenciosas no backend
- 
- Funcionais (Caixa Preta)  |  Jornada e experiência do utilizador  |  Manual / Sistema  |  Garante que o fluxo de reserva funciona
- 
- Regressão  |  Estabilidade após novas alterações  |  Manual / Git  |  Impede o retorno de bugs antigos
- 
- Usabilidade & UI  |  Interface e Responsividade  |  DevTools / Navegador  |  Garante acessibilidade e fluidez visual
-
-
-##  Documentação de Bugs
-
-Todos os bugs encontrados foram documentados seguindo o padrão:
-
-ID/Título: Resumo do problema.
-
-Severidade: (Crítica, Alta, Média, Baixa).
-
-Passos para Reproduzir: Caminho exato para chegar ao erro.
-
-Resultado Esperado vs. Resultado Atual.
-
-Evidências: Screenshots ou logs do terminal/console.
+---
+*Documentação de QA gerada em: 24/05/2026*
