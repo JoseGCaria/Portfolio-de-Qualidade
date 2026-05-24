@@ -39,4 +39,4 @@ A API aceita o e-mail mal formatado, retorna o status 201 Created e persiste o u
 * **Servidor:** Docker 
 
 ## 7. Evidências
-![Evidencia de email mal formatado](./Evidencia_Extras/Email_mal.png)
+![Evidencia de email mal formatado](./Evidencia_Extras/Email_malFormatado.png)
