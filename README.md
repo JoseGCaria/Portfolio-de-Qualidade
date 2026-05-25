@@ -36,4 +36,4 @@ Para garantir que futuras correções não impactem o sistema, adotamos um plano
 * **Ação:** Sempre que uma correção for aplicada, o fluxo de login e criação de check-in deve ser executado para confirmar a integridade.
 
 ---
-*Documentação de QA gerada em: 24/05/2026*
+*Documentação de QA: 24/05/2026*
